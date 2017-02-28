@@ -1,0 +1,10 @@
+version: '2'
+services:
+  revealmd:
+    image: revealmd:latest
+    volumes_from:
+      - impostor
+  impostor:
+    image: impostor:latest
+    volumes:
+      - /app
